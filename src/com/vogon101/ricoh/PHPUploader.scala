@@ -9,7 +9,7 @@ import java.net.{URL, HttpURLConnection}
 object PHPUploader {
 
   def upload(filePath: String): Unit = {
-    val httpUrlConnection = new URL("http://188.166.158.93/upload.php").openConnection().asInstanceOf[HttpURLConnection]
+    val httpUrlConnection = new URL("http://188.166.158.93/ricoh/upload.php").openConnection().asInstanceOf[HttpURLConnection]
     httpUrlConnection.setDoOutput(true)
     httpUrlConnection.setRequestMethod("POST")
     val os = httpUrlConnection.getOutputStream
